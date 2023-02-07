@@ -733,7 +733,7 @@ footer {
 table {
   display: flex;
   justify-content: center;
-  margin: 100px 10%;
+  margin-left: 5px;
 }
 
 .grayRow {
@@ -767,18 +767,22 @@ table {
 }
 
 .date {
+  padding-top: 15px;
   padding-left: 226px;
 }
 
 .Dl {
+  padding-top: 15px;
   padding-left: 50px;
 }
 
 .size {
+  padding-top: 15px;
   padding-left: 53px;
 }
 
 .Page-size {
+  padding-top: 15px;
   padding-left: 25px;
 }
 
@@ -794,6 +798,7 @@ table {
 }
 
 .btnPublic {
+  margin-top: 15px;
   cursor: pointer;
   margin-left: 55px;
   width: 49px;
@@ -811,14 +816,20 @@ table {
 }
 
 .eye {
+  cursor: pointer;
+  padding-top: 15px;
   padding-left: 55px;
 }
 
 .Shape-Delete {
+  cursor: pointer;
+  padding-top: 15px;
   padding-left: 15px;
 }
 
 .Shape-Edit {
+  cursor: pointer;
+  margin-top: 15px;
   padding-left: 15px;
   padding: 1px 22px;
 }
@@ -1007,4 +1018,124 @@ table {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.files_table {
+  width: 100%;
+}
+.files_table tr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.files_table_greyRow {
+  height: 45px;
+  background: #F4F7FC;
+}
+
+.td {
+  height: 45px;
+}
+.td_checkbox {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.td_checkbox input {
+  width: 14px;
+  height: 14px;
+}
+.td_type {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_name {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_fileCount {
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_date-created {
+  width: 108px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_Dl {
+  width: 78px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_size {
+  width: 105px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+.td_access {
+  width: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  color: #606F89;
+}
+
+.arrows {
+  margin-left: 5px;
+}
+
+.dots {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

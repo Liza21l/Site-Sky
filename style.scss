@@ -760,7 +760,7 @@ footer{
 table{
     display: flex;
     justify-content: center;
-    margin: 100px 10%;
+    margin-left: 5px;
 }
 .grayRow{
     background: #F4F7FC;
@@ -789,15 +789,19 @@ table{
     padding-left: 39px;
 }
 .date{
+    padding-top: 15px;
     padding-left: 226px;
 }
 .Dl{
+    padding-top: 15px;
     padding-left: 50px;
 }
 .size{
+    padding-top: 15px;
     padding-left: 53px;
 }
 .Page-size{
+    padding-top: 15px;
     padding-left: 25px;
 }
 .Fille{
@@ -812,6 +816,7 @@ table{
     color: #437FEC;
 }
 .btnPublic{
+    margin-top: 15px;
     cursor: pointer;
     margin-left: 55px;
     width: 49px;
@@ -830,12 +835,18 @@ table{
     
 }
 .eye{
+    cursor: pointer;
+    padding-top: 15px;
     padding-left: 55px;
 }
 .Shape-Delete{
+    cursor: pointer;
+    padding-top: 15px;
     padding-left: 15px;
 }
 .Shape-Edit{
+    cursor: pointer;
+    margin-top: 15px;
     padding-left: 15px;
     padding: 1px 22px;
 }
@@ -1005,4 +1016,116 @@ table{
     line-height: 17px;
   
     color: #FFFFFF;
+}
+@mixin flexElement($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin row($background){
+    height: 45px;
+    background: $background;
+}
+.files_table{ 
+        width: 100%;
+        tr{
+            @include flexElement(flex-start,flex-start);
+        }
+        &_greyRow{
+            @include row(#F4F7FC);
+        }
+}
+.td{
+    height: 45px;
+    &_checkbox{
+        width: 50px;
+        @include flexElement(center,center);
+        input{
+            width: 14px;
+            height: 14px;
+        }
+    }
+    &_type{ 
+        width: 110px;
+        @include flexElement(center,center);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+        
+    }
+    &_name{ 
+        width: 300px;
+        @include flexElement(flex-start,center);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+        
+    }
+    &_fileCount{
+        width: 100px;
+        @include flexElement(flex-start,center);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+        
+    }
+    &_date-created{
+        width: 108px;
+        @include flexElement(flex-start,center);
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+    }
+    &_Dl{
+        width: 78px;
+        @include flexElement(flex-start,center);
+        padding-left: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+
+    }
+    &_size{
+        width: 105px;
+        @include flexElement(flex-start,center);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+    }
+    &_access{
+        width: 140px;
+        @include flexElement(flex-start,center);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #606F89;
+    }
+}
+.arrows{
+    margin-left: 5px;
+}
+.dots{
+    margin-top: 10px;
+    
 }
